@@ -3,12 +3,10 @@ import App from './App.vue'
 import router from './router/router'
 import store from './store/index'
 import ApiList from './api/index'
-
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import Vant from 'vant';
 import 'vant/lib/index.css';
-
 
 Vue.config.productionTip = false;
 Vue.prototype.$api = ApiList;

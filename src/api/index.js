@@ -17,7 +17,7 @@ function commonUrl(url, params = {}, method = 'get') {
 const ApiList = {
     // getDate:commonUrl('/forward/billDeduct/payment/baseMonopolyLpinfoList?datatype=jsonp',params,'get'),
     getDate(params){
-        return commonUrl('/forward/billDeduct/payment/baseMonopolyLpinfoList?datatype=jsonp',params,'get');
+        return commonUrl('',params,'get');
     },
 }
 

@@ -5,38 +5,6 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 
-// const router = new Router({
-//     routes: [
-//         {
-//             path: '/',
-//             redirect: 'list',
-//         },
-//         List,
-//     ]
-// });
-
-
-
-// router.beforeEach((to,from,next)=>{
-//     const [urls,path] = [
-//         [
-//             '/lsit',   //登录界面
-//         ],
-//         to.path
-//     ];
-//     console.log('---> ',urls);
-//     if(urls.includes(path)){
-//         let appKey = false;
-//         if(path == '/' || path == '/lsit' && (!appKey)){
-//             router.push({path:'/list'});
-//         }else{
-//             router.push({path:'/list'});
-//         }
-//     }
-
-// })
-
-
 // export default router;
 
 
