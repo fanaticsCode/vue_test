@@ -31,7 +31,7 @@ console.log(router);
 Vue.use(BaiduMap,{
 	ak:'D9wpuQ5c9nEEBoAavqqVyjMdyjBS18PI',
 });
-/* 测试 */
+/* 测试-test分支 */
 
 /* 自定义指令 */
 Vue.directive('drag', {
