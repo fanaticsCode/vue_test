@@ -5,7 +5,7 @@ import store from '../store/index'
 import { LoadingBar } from 'iview';
 import { Toast } from 'vant';
 
-console.log('11---',store);
+
 /* 
 // 环境的切换
 if (process.env.NODE_ENV == 'development') {
@@ -67,7 +67,7 @@ const ErrorHandle = (status, other) => {
 			Tip('请求资源不存在');
 			break;
 		default:
-			console.log(other);
+			// console.log(other);
 	}
 }
 
@@ -95,7 +95,7 @@ instance.interceptors.request.use((config) => {
         }
 	}
 	LoadingBar.start();
-	console.log(config.params);
+	// console.log(config.params);
 	const token = store.state.token;
 	// 如果存在就运行 后一句 吧token赋值在请求头中
 	token && (config.headers.Authorization == token)
@@ -125,7 +125,7 @@ instance.interceptors.response.use((res) => {
 			断网组件中的刷新重新获取数据
 		 */
 		if (!window.navigator.onLine) {  //检查网络是否连接 属性》online
-			store.commot('cahngeNetwork', null);
+			store.commit('cahngeNetwork', null);
 		} else {
 			return Promise.reject(error);
 		}

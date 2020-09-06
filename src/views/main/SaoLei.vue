@@ -271,7 +271,6 @@ export default {
             for (let k = N * M - 1; k >= 0; k--) {
                 let x = parseInt(k / N);
                 let y = k % N;
-                console.log(x,y)
                 // debugger;
                 //放到另一个随机的位置
                 let randX = parseInt(Math.random() * (k + 1));
@@ -332,7 +331,6 @@ export default {
          * 这个坐标是否包含在区域内
          */
         contain(x, y) {
-            console.log('x,y:',x,y);
             let N = this.row;
             let M = this.column;
             if (x >= 0 && x < N && y >= 0 && y < M) {

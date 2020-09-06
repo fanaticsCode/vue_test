@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-08-20 21:45:33
+ * @LastEditTime: 2020-09-02 20:39:25
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \cwpe:\Project_code\github_project\vue_test\src\views\main\Son.vue
+-->
 <template>
     <div id="template-son">
 
@@ -42,7 +50,6 @@
         },
 
         created() {
-            console.log('created');
         },
 
         methods:{

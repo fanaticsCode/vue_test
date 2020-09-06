@@ -27,7 +27,7 @@ export default new Router({
             component: () => import('../views/main/List.vue'),
             children: [
                 {
-                    path: '/father',
+                    path: '/father123',
                     name: 'father',
                     meta: {
                         text:'这是father组件'
@@ -43,8 +43,18 @@ export default new Router({
                     },
                     component: () => import('../views/main/SaoLei.vue'),
                 },
-
+                
             ],
-        }
+        },
+        {
+            path: '/audio',
+            name: 'audio',
+            meta: {
+                checkLogin:true,
+                text:'xly音视频'
+            },
+            component: () => import('../views/main/audioVideo.vue'),
+        },
+
     ]
 });

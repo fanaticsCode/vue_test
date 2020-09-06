@@ -1,19 +1,36 @@
+/*
+ * @Author: your name
+ * @Date: 2020-08-20 21:45:33
+ * @LastEditTime: 2020-09-02 21:18:50
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \cwpe:\Project_code\github_project\vue_test\src\main.js
+ */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/router'
 import store from './store/index'
+/*api引入*/
 import ApiList from './api/index'
+/*iview引入*/
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
+/*vant引入*/
 import Vant from 'vant';
 import 'vant/lib/index.css';
+/*引入百度地图*/
+import BaiduMap from 'vue-baidu-map';
 
 Vue.config.productionTip = false;
 Vue.prototype.$api = ApiList;
 
 Vue.use(iView);
 Vue.use(Vant);
-
+console.log(router);
+/*配置地图的ke*/
+Vue.use(BaiduMap,{
+	ak:'D9wpuQ5c9nEEBoAavqqVyjMdyjBS18PI',
+});
 
 
 /* 自定义指令 */
@@ -64,15 +81,17 @@ Vue.directive('drag', {
 
 
 
-/* 
-	全局路由钩子
-*/
+/* 全局路由钩子*/
 router.beforeEach((to,from,next)=>{
-	console.log('to',to);
-	console.log('from',from);
+	// console.log('to',to);
+	// console.log('from',from);
+	// debugger;
+	/* 判断路由是否登录 */
 	if(to.matched.some((item)=> item.meta.checkLogin )){
+		
 		next();
 	}
+	// next();
 })
 
 

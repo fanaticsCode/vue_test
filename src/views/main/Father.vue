@@ -66,7 +66,6 @@
 
             testFun(data){
                 this.test = data;
-                console.log('父组件',data);
             },
             
             getDate(){
