@@ -55,6 +55,16 @@ export default new Router({
             },
             component: () => import('../views/main/audioVideo.vue'),
         },
+        {
+            path: '/bigScreenCollect',
+            name: 'bigScreenCollect',
+            meta: {
+                checkLogin:true,
+                text:'大屏'
+            },
+            // component: () => import('../views/main/bigScreenCaseCollect/bigScreenCollect.vue'),
+            component: () => import('../views/main/bigScreenCaseCollect/bigScreenCollect.vue'),
+        },
 
     ]
 });
