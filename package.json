@@ -23,7 +23,7 @@
     "iview": "^3.4.2",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "vue-baidu-map": "^0.21.22",
     "vue-template-compiler": "^2.6.10"
   },
